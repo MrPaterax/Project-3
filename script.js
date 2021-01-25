@@ -37,6 +37,9 @@ function checkAnswer(){
   else if (guess < 0 || guess > 100){
     answerCheck.textContent = "Number too high or too low!"
   }
+  else if(score <= 0 ) {
+    answerCheck.textContent = "Press play to play again!"
+  }
   else{ //pass the fail checks
     if(guess == answer){
       answerCheck.textContent = "You won!"
